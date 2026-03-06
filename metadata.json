@@ -1,0 +1,7 @@
+{
+  "name": "FloraID - AI Plant Identifier",
+  "description": "Identify plants instantly from photos and get expert care tips using AI.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

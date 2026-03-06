@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+  
+  --color-sage-50: #f4f7f4;
+  --color-sage-100: #e6ede6;
+  --color-sage-200: #ceddce;
+  --color-sage-300: #a8c1a8;
+  --color-sage-400: #7da07d;
+  --color-sage-500: #5d805d;
+  --color-sage-600: #486548;
+  --color-sage-700: #3b513b;
+  --color-sage-800: #324332;
+  --color-sage-900: #2b382b;
+  --color-sage-950: #171f17;
+}
+
+@layer base {
+  body {
+    @apply bg-sage-50 text-sage-900 antialiased transition-colors duration-300 dark:bg-sage-950 dark:text-sage-50;
+    font-family: var(--font-sans);
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+  }
+}
